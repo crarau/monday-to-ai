@@ -1,15 +1,15 @@
-# Pivot Monday.com Exporter
+# Monday to AI
 
-A clean, simple tool to export Monday.com tasks with all their content for AI context sharing.
+Export Monday.com tasks with full context for AI assistants. A simple tool that bridges Monday.com project management with AI-powered development workflows.
 
 ## 🎯 Purpose
 
 Export Monday.com tasks as markdown documents with all comments, replies, and referenced images - perfect for sharing complete context with AI assistants.
 
-## 📁 Structure
+## 📁 Repository Structure
 
 ```
-pivot-monday/
+monday-to-ai/
 ├── monday_exporter.py   # The exporter tool
 ├── .env.example         # Template for API token
 ├── .gitignore          # Excludes downloaded tasks from git
