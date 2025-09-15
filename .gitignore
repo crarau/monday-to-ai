@@ -1,0 +1,16 @@
+# Ignore downloaded Monday.com tasks
+Web_*/
+*_standalone.html
+*_light.md
+*_text.txt
+
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+.DS_Store
