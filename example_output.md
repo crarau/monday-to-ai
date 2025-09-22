@@ -2,6 +2,8 @@
 
 *Exported from Monday.com on 2024-03-15 14:30*
 
+> **📌 Demo Note:** This is an example export showing how Monday.com tasks are transformed into markdown. Images shown are placeholders - in real exports, actual screenshots and attachments from your Monday.com task are downloaded and embedded.
+
 ---
 
 ## 📌 Task Information
@@ -38,7 +40,7 @@ Implement a comprehensive dark mode feature across the entire application. This 
 
 @Alex @Emma Let's implement dark mode! Here's the design mockup from our designer:
 
-![Dark Mode Design Mockup](images/comment_0_0.png)
+![Dark Mode Design Mockup](https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Dark+Mode+Design+Mockup)
 
 Key requirements:
 - Toggle in settings menu
@@ -68,7 +70,7 @@ Key requirements:
 **↳ Emma Watson** - 2024-03-12 14:20
 
   I'll handle the UI components. Found this reference implementation:
-  ![Component Examples](images/reply_1_1_0.png)
+  ![Component Examples](https://via.placeholder.com/600x300/2d3748/ffffff?text=Component+Examples)
 
   Should we also add an "auto" option that follows system theme?
 
@@ -85,7 +87,7 @@ Key requirements:
 
 Progress update: Core implementation done! ✅
 
-![Dark Mode Toggle Working](images/comment_1_0.png)
+![Dark Mode Toggle Working](https://via.placeholder.com/600x350/4a5568/ffffff?text=Dark+Mode+Toggle+Demo)
 
 Created a React context that:
 - Detects system preference on load
@@ -105,7 +107,7 @@ PR: #1234
   - ✅ Safari 17.3
   - ⚠️ Edge - minor transition glitch
 
-  ![Edge Browser Issue](images/reply_2_0_0.png)
+  ![Edge Browser Issue](https://via.placeholder.com/500x200/ff6b6b/ffffff?text=Edge+Browser+Issue)
 
 **↳ Alex Rodriguez** - 2024-03-14 10:00
 
@@ -125,7 +127,7 @@ Completed:
 - ✅ Data tables
 - ✅ Charts (using theme-aware colors)
 
-![Components Showcase](images/comment_2_0.png)
+![Components Showcase](https://via.placeholder.com/700x400/667eea/ffffff?text=All+Components+with+Dark+Mode)
 
 ---
 
@@ -142,9 +144,11 @@ Let's ship this in the next release!
 
 ## 📎 Attachments
 
-- [Design Specifications.pdf](attachments/dark_mode_specs.pdf)
-- [Component Checklist.xlsx](attachments/component_checklist.xlsx)
-- [Beta Test Results.docx](attachments/beta_feedback.docx)
+- 📄 [Design Specifications.pdf](#) *(2.3 MB)*
+- 📊 [Component Checklist.xlsx](#) *(45 KB)*
+- 📝 [Beta Test Results.docx](#) *(156 KB)*
+
+*Note: In actual exports, these link to downloaded files in the task folder*
 
 ## ✅ Subtasks
 
@@ -159,4 +163,4 @@ Let's ship this in the next release!
 
 ---
 
-*This task export includes 5 images and 3 file attachments*
+*This example demonstrates an export with 5 embedded images and 3 file attachments. In real exports, all media is downloaded locally to an `images/` folder.*
