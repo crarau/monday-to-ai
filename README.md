@@ -41,10 +41,10 @@ Working with AI assistants like **ChatGPT**, **Claude**, or **Gemini** on your [
 ✅ Ready to paste into any AI chat
 ```
 
-<details>
-<summary><b>📄 Click to see actual example output</b></summary>
+### 📄 Example Output
 
-```markdown
+---
+
 # Web: Implement Dark Mode Feature
 
 *Exported from Monday.com on 2024-03-15 14:30*
@@ -52,42 +52,60 @@ Working with AI assistants like **ChatGPT**, **Claude**, or **Gemini** on your [
 ## 📌 Task Information
 
 - **Board:** Product Development Sprint
+- **Workspace:** Engineering Team
+- **Group:** IN PROGRESS
 - **Status:** Development 🚀
 - **Assigned to:** Alex Rodriguez, Emma Watson
 - **Due Date:** 2024-03-20
 - **Priority:** High
+- **Story Points:** 8
 
 ## 💬 Comments & Discussion
 
 ### 💭 Sarah Chen - 2024-03-12 10:30
 
-@Alex @Emma Let's implement dark mode! Here's the design mockup:
+@Alex @Emma Let's implement dark mode! Here's the design mockup from our designer:
 
-![Dark Mode Design](images/comment_0_0.png)
+![Dark Mode Design Mockup](images/comment_0_0.png)
 
 Key requirements:
 - Toggle in settings menu
-- Respect system preferences
-- Smooth CSS transitions
+- Respect system preferences by default
+- Smooth CSS transitions (300ms)
+- Store preference in localStorage
 
-#### Replies:
+#### 💬 Replies:
 
 **↳ Alex Rodriguez** - 2024-03-12 11:15
-  Great! I'll start with the theme context provider...
+
+  Great! I'll start with the theme context provider. We should use CSS variables for colors to make this maintainable.
+
+  ```javascript
+  const themes = {
+    light: { '--bg-primary': '#ffffff', '--text-primary': '#1a1a1a' },
+    dark: { '--bg-primary': '#1a1a1a', '--text-primary': '#ffffff' }
+  }
+  ```
 
 **↳ Emma Watson** - 2024-03-12 14:20
-  I'll handle the UI components...
+
+  I'll handle the UI components. Should we also add an "auto" option that follows system theme?
 
 ### 💭 Alex Rodriguez - 2024-03-13 16:45
 
 Progress update: Core implementation done! ✅
 
-![Dark Mode Working](images/comment_1_0.png)
+![Dark Mode Toggle Working](images/comment_1_0.png)
 
-[... continues with full context ...]
-```
+Created a React context that:
+- Detects system preference on load
+- Persists user choice to localStorage
+- Provides `useTheme()` hook for components
+- Handles CSS variable injection
 
-</details>
+PR: #1234
+
+---
 
 See [full example output](example_output.md) →
 
