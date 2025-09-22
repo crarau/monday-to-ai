@@ -513,9 +513,14 @@ def main():
     # Get API token
     api_token = os.getenv("MONDAY_API_TOKEN")
     if not api_token:
-        api_token = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjU2MTgxMDgzNSwiYWFpIjoxMSwidWlkIjo4MjQwOTgyOCwiaWFkIjoiMjAyNS0wOS0xNVQwMDoxNzo1OS4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTYwOTA4MTMsInJnbiI6InVzZTEifQ.f8S3XqAW7rxOup8AB1so-KJfKUeQ_xTsaoIFbxsgPkQ"
-        print("⚠️  No API token in .env file. Using default token.")
-        print("   Create a .env file with MONDAY_API_TOKEN=your-token")
+        print("\n❌ No Monday.com API token found!")
+        print("   Please create a .env file with your Monday.com API token:")
+        print("   echo 'MONDAY_API_TOKEN=your-token-here' > .env")
+        print("\n   To get your token:")
+        print("   1. Go to monday.com")
+        print("   2. Click your avatar → Developers")
+        print("   3. Create a personal API token")
+        return 1
     else:
         print("✓ Using API token from .env file")
     

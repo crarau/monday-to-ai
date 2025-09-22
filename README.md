@@ -20,14 +20,21 @@ monday-to-ai/
 
 ## 🚀 Quick Start
 
-### 1. Set up API Token (Optional)
+### 1. Set up API Token (Required)
 
 ```bash
 cp .env.example .env
 # Edit .env and add your Monday.com API token
 ```
 
-Get your token from: https://monday.com/developers/v2#authentication
+**How to get your token:**
+1. Log into Monday.com
+2. Click your avatar → Developers
+3. Click "API" → "Get API Token"
+4. Create a personal API token
+5. Copy and paste it into your `.env` file
+
+API Documentation: https://monday.com/developers/v2#authentication
 
 ### 2. Export a Task
 

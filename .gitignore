@@ -1,5 +1,5 @@
 # Ignore downloaded Monday.com tasks
-Web_*/
+Web*/
 *_standalone.html
 *_light.md
 *_text.txt
