@@ -40,7 +40,22 @@ Implement a comprehensive dark mode feature across the entire application. This 
 
 @Alex @Emma Let's implement dark mode! Here's the design mockup from our designer:
 
-![Dark Mode Design Mockup](https://via.placeholder.com/600x400/6366f1/ffffff?text=Dark+Mode+Design+Mockup)
+```
+┌─────────────────────────────────────┐
+│   🌙 DARK MODE DESIGN MOCKUP        │
+│                                     │
+│   [Toggle] ● Dark ○ Light ○ Auto   │
+│                                     │
+│   Background: #1a1a1a              │
+│   Text: #ffffff                    │
+│   Accent: #6366f1                  │
+│                                     │
+│   ✓ Smooth transitions             │
+│   ✓ Saves preference               │
+│   ✓ Respects system theme          │
+└─────────────────────────────────────┘
+```
+*[Image: dark_mode_design.png - 600x400px]*
 
 Key requirements:
 - Toggle in settings menu
@@ -70,7 +85,16 @@ Key requirements:
 **↳ Emma Watson** - 2024-03-12 14:20
 
   I'll handle the UI components. Found this reference implementation:
-  ![Component Examples](https://via.placeholder.com/600x300/10b981/ffffff?text=Component+Examples)
+
+  ```
+  ╔══════════════════════════════╗
+  ║  COMPONENT LIBRARY EXAMPLES  ║
+  ║  ✅ Button    ✅ Modal       ║
+  ║  ✅ Card      ✅ Dropdown    ║
+  ║  ✅ Table     ✅ Forms       ║
+  ╚══════════════════════════════╝
+  ```
+  *[Image: components.png - 600x300px]*
 
   Should we also add an "auto" option that follows system theme?
 
@@ -87,7 +111,21 @@ Key requirements:
 
 Progress update: Core implementation done! ✅
 
-![Dark Mode Toggle Working](https://via.placeholder.com/600x350/f59e0b/ffffff?text=Dark+Mode+Toggle+Demo)
+```
+┌──────────────────────────────────────────┐
+│  🎨 DARK MODE TOGGLE - WORKING!          │
+│                                          │
+│  Settings > Appearance                  │
+│  ┌────────────────────────┐             │
+│  │ Theme:  [🌙 Dark Mode] │             │
+│  └────────────────────────┘             │
+│                                          │
+│  ✅ Toggle animation working             │
+│  ✅ Preference saved to localStorage     │
+│  ✅ All components updated               │
+└──────────────────────────────────────────┘
+```
+*[Image: dark_mode_working.gif - 600x350px]*
 
 Created a React context that:
 - Detects system preference on load
@@ -107,7 +145,12 @@ PR: #1234
   - ✅ Safari 17.3
   - ⚠️ Edge - minor transition glitch
 
-  ![Edge Browser Issue](https://via.placeholder.com/500x200/ef4444/ffffff?text=Edge+Browser+Issue)
+  ```
+  ⚠️ EDGE BROWSER ISSUE
+  Transition flickers on toggle
+  Console: "CSS transition conflict"
+  ```
+  *[Image: edge_issue.png - 500x200px]*
 
 **↳ Alex Rodriguez** - 2024-03-14 10:00
 
@@ -127,7 +170,21 @@ Completed:
 - ✅ Data tables
 - ✅ Charts (using theme-aware colors)
 
-![Components Showcase](https://via.placeholder.com/700x400/8b5cf6/ffffff?text=All+Components+with+Dark+Mode)
+```
+╔═══════════════════════════════════════════════════╗
+║  🎨 ALL COMPONENTS - DARK MODE READY             ║
+║                                                   ║
+║  Navigation  [████████████████████████] 100%     ║
+║  Sidebar     [████████████████████████] 100%     ║
+║  Cards       [████████████████████████] 100%     ║
+║  Forms       [████████████████████████] 100%     ║
+║  Tables      [████████████████████████] 100%     ║
+║  Charts      [████████████████████████] 100%     ║
+║                                                   ║
+║  Total: 47 components updated ✅                  ║
+╚═══════════════════════════════════════════════════╝
+```
+*[Image: all_components_dark.png - 700x400px]*
 
 ---
 
