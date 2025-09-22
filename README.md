@@ -66,44 +66,55 @@ Working with AI assistants like **ChatGPT**, **Claude**, or **Gemini** on your [
 
 @Alex @Emma Let's implement dark mode! Here's the design mockup from our designer:
 
-![Dark Mode Design Mockup](images/comment_0_0.png)
+```
+┌─────────────────────────────────────┐
+│   🌙 DARK MODE DESIGN MOCKUP        │
+│                                     │
+│   [Toggle] ● Dark ○ Light ○ Auto   │
+│                                     │
+│   Background: #1a1a1a              │
+│   Text: #ffffff                    │
+│   Accent: #6366f1                  │
+└─────────────────────────────────────┘
+```
+*[Image: dark_mode_design.png - 600x400px]*
 
 Key requirements:
 - Toggle in settings menu
-- Respect system preferences by default
-- Smooth CSS transitions (300ms)
-- Store preference in localStorage
+- Respect system preferences
+- Smooth CSS transitions
 
 #### 💬 Replies:
 
 **↳ Alex Rodriguez** - 2024-03-12 11:15
 
-  Great! I'll start with the theme context provider. We should use CSS variables for colors to make this maintainable.
-
-  ```javascript
-  const themes = {
-    light: { '--bg-primary': '#ffffff', '--text-primary': '#1a1a1a' },
-    dark: { '--bg-primary': '#1a1a1a', '--text-primary': '#ffffff' }
-  }
-  ```
+  Great! I'll start with the theme context provider...
 
 **↳ Emma Watson** - 2024-03-12 14:20
 
-  I'll handle the UI components. Should we also add an "auto" option that follows system theme?
+  I'll handle the UI components...
 
 ### 💭 Alex Rodriguez - 2024-03-13 16:45
 
 Progress update: Core implementation done! ✅
 
-![Dark Mode Toggle Working](images/comment_1_0.png)
+```
+┌──────────────────────────────────────────┐
+│  🎨 DARK MODE TOGGLE - WORKING!          │
+│                                          │
+│  Settings > Appearance                  │
+│  ┌────────────────────────┐             │
+│  │ Theme:  [🌙 Dark Mode] │             │
+│  └────────────────────────┘             │
+│                                          │
+│  ✅ Toggle animation working             │
+│  ✅ Preference saved to localStorage     │
+│  ✅ All components updated               │
+└──────────────────────────────────────────┘
+```
+*[Image: dark_mode_working.gif - 600x350px]*
 
-Created a React context that:
-- Detects system preference on load
-- Persists user choice to localStorage
-- Provides `useTheme()` hook for components
-- Handles CSS variable injection
-
-PR: #1234
+Created React context with theme switching...
 
 ---
 
