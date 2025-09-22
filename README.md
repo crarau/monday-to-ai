@@ -21,14 +21,28 @@ Working with AI assistants like **ChatGPT**, **Claude**, or **Gemini** on your [
 
 ## 🖼️ What You Get
 
-Transform your Monday.com tasks from this:
+### Before: Monday.com Interface
+```
+📋 Task in Monday.com:
+- Information scattered across columns
+- Comments in separate thread view
+- Images as attachments
+- Replies nested in UI
+- Hard to copy/share full context
+```
 
-![Monday.com Task View](https://monday.com/blog/wp-content/uploads/2022/09/monday-UI.png)
-
-Into beautiful markdown like this:
+### After: Clean Markdown Export
+```
+📄 Single markdown file with:
+✅ All task information in one place
+✅ Complete comment history with timestamps
+✅ Images downloaded and embedded
+✅ Reply threads preserved
+✅ Ready to paste into any AI chat
+```
 
 <details>
-<summary><b>📄 Click to see example output</b></summary>
+<summary><b>📄 Click to see actual example output</b></summary>
 
 ```markdown
 # Web: Implement Dark Mode Feature
