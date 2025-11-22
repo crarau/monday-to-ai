@@ -14,3 +14,5 @@ __pycache__/
 # Temporary files
 *.tmp
 .DS_Store
+# Lightspeed investigation folders
+WEB_*Lightspeed*/
